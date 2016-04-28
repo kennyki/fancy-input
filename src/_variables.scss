@@ -1,2 +1,14 @@
-$fancy-input-color: #5ABB7B;
-$fancy-input-blank-color: #fff;
+$blank: #fff;
+
+$themes: (
+  // blue
+  positive: #387ef5,
+  // green
+  balanced: #33cd5f,
+  // red
+  assertive: #ef473a,
+  // grey
+  dark: #444444,
+  // purple
+  royal: #886aea
+);

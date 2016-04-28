@@ -20,7 +20,6 @@ label.fancy-input {
         height: 1em;
         padding: 0.1em;
         margin-right: 0.5em;
-        box-shadow: 0 0 0 0.1em #5ABB7B;
         border: 0.125em solid transparent;
         color: #fff;
         transition: 0.5s ease background; }
@@ -28,10 +27,59 @@ label.fancy-input {
       border-color: #fff; }
     label.fancy-input input[type='radio'] + span:before {
       border-radius: 1em; }
-    label.fancy-input input[type='radio']:checked + span:before {
-      background: #5ABB7B; }
     label.fancy-input input[type='checkbox']:checked + span:before {
-      content: '\2713';
-      background: #5ABB7B; }
-    label.fancy-input input:focus + span:before {
-      box-shadow: 0 0 0.05em 0.2em #b4e0c3; }
+      content: '\2713'; }
+
+label.fancy-input.positive input + span:before {
+  box-shadow: 0 0 0 0.1em #387ef5; }
+
+label.fancy-input.positive input:checked + span:before {
+  background: #387ef5; }
+
+label.fancy-input.positive input:focus + span:before {
+  box-shadow: 0 0 0.05em 0.2em #b1cdfb; }
+
+label.fancy-input.balanced input + span:before {
+  box-shadow: 0 0 0 0.1em #33cd5f; }
+
+label.fancy-input.balanced input:checked + span:before {
+  background: #33cd5f; }
+
+label.fancy-input.balanced input:focus + span:before {
+  box-shadow: 0 0 0.05em 0.2em #99e6af; }
+
+label.fancy-input.assertive input + span:before {
+  box-shadow: 0 0 0 0.1em #ef473a; }
+
+label.fancy-input.assertive input:checked + span:before {
+  background: #ef473a; }
+
+label.fancy-input.assertive input:focus + span:before {
+  box-shadow: 0 0 0.05em 0.2em #f9b5b0; }
+
+label.fancy-input.dark input + span:before {
+  box-shadow: 0 0 0 0.1em #444444; }
+
+label.fancy-input.dark input:checked + span:before {
+  background: #444444; }
+
+label.fancy-input.dark input:focus + span:before {
+  box-shadow: 0 0 0.05em 0.2em #848484; }
+
+label.fancy-input.royal input + span:before {
+  box-shadow: 0 0 0 0.1em #886aea; }
+
+label.fancy-input.royal input:checked + span:before {
+  background: #886aea; }
+
+label.fancy-input.royal input:focus + span:before {
+  box-shadow: 0 0 0.05em 0.2em #e1dafa; }
+
+label.fancy-input input + span:before {
+  box-shadow: 0 0 0 0.1em #387ef5; }
+
+label.fancy-input input:checked + span:before {
+  background: #387ef5; }
+
+label.fancy-input input:focus + span:before {
+  box-shadow: 0 0 0.05em 0.2em #b1cdfb; }

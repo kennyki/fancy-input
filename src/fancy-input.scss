@@ -1,4 +1,5 @@
 @import '_variables';
+@import '_mixins';
 
 label.fancy-input {
   display: inline-block;
@@ -32,39 +33,26 @@ label.fancy-input {
         // so that the tick does not stick to the left
         padding: 0.1em;
         margin-right: 0.5em;
-        box-shadow: 0 0 0 0.1em $fancy-input-color;
         border: 0.125em solid transparent;
-        color: $fancy-input-blank-color;
+        color: $blank;
         transition: 0.5s ease background;
       }
     }
 
     &:checked + span:before {
-      border-color: $fancy-input-blank-color;
+      border-color: $blank;
     }
 
-    // radio
-    &[type='radio'] {
-      // generic (unchecked)
-      & + span:before {
-        border-radius: 1em;
-      }
-
-      // checked
-      &:checked + span:before {
-        background: $fancy-input-color;
-      }
+    // radio (generic)
+    &[type='radio'] + span:before {
+      border-radius: 1em;
     }
 
-    // checkbox
+    // checkbox (checked)
     &[type='checkbox']:checked + span:before {
       content: '\2713';
-      background: $fancy-input-color;
-    }
-
-    // never forget focus styling
-    &:focus + span:before {
-      box-shadow: 0 0 0.05em 0.2em lighten($fancy-input-color, 25%);
     }
   }
 }
+
+@include generate-themes($themes);

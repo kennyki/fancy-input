@@ -1,0 +1,27 @@
+@mixin generate-themes($themes) {
+  @each $theme, $color in $themes {
+    @include generate-theme($theme, $color);
+  };
+
+  // default
+  @include generate-theme(null, map-get($themes, positive));
+};
+
+@mixin generate-theme($theme, $color) {
+  $themeClass: if($theme, '.#{$theme}', '');
+
+  label.fancy-input#{$themeClass} input {
+    // the basic, unchecked style
+    & + span:before {
+      box-shadow: 0 0 0 0.1em $color;
+    }
+    // checked
+    &:checked + span:before {
+      background: $color;
+    }
+    // focused
+    &:focus + span:before {
+      box-shadow: 0 0 0.05em 0.2em lighten($color, 25%);
+    }
+  }
+};
