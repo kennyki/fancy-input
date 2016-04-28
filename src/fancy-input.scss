@@ -1,0 +1,70 @@
+@import '_variables';
+
+label.fancy-input {
+  display: inline-block;
+  cursor: pointer;
+  // to align the checkbox and text
+  line-height: 1.3em;
+
+  input {
+    // HTML5 Boilerplate accessible hidden styles
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+
+    // use a sibling element for styling
+    & + span {
+      display: block;
+
+      // the basic, unchecked style
+      &:before {
+        // use non-breaking space
+        // so that the height of empty is the same as tick
+        content: '\00A0';
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        // so that the tick does not stick to the left
+        padding: 0.1em;
+        margin-right: 0.5em;
+        box-shadow: 0 0 0 0.1em $fancy-input-color;
+        border: 0.125em solid transparent;
+        color: $fancy-input-blank-color;
+        transition: 0.5s ease background;
+      }
+    }
+
+    &:checked + span:before {
+      border-color: $fancy-input-blank-color;
+    }
+
+    // radio
+    &[type='radio'] {
+      // generic (unchecked)
+      & + span:before {
+        border-radius: 1em;
+      }
+
+      // checked
+      &:checked + span:before {
+        background: $fancy-input-color;
+      }
+    }
+
+    // checkbox
+    &[type='checkbox']:checked + span:before {
+      content: '\2713';
+      background: $fancy-input-color;
+    }
+
+    // never forget focus styling
+    &:focus + span:before {
+      box-shadow: 0 0 0.05em 0.2em lighten($fancy-input-color, 25%);
+    }
+  }
+}

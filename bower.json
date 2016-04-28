@@ -1,0 +1,27 @@
+{
+  "name": "fancy-input",
+  "homepage": "https://github.com/kennyki/fancy-input",
+  "authors": [
+    "kenny ki <knyki.12@gmail.com>"
+  ],
+  "description": "Custom radio & checkbox input with CSS (only)",
+  "main": "dist/fancy-input.css",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "fancy-input",
+    "custom",
+    "radio",
+    "custom",
+    "checkbox"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

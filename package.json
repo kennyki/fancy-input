@@ -1,0 +1,26 @@
+{
+  "name": "fancy-input",
+  "version": "0.1.0",
+  "description": "Custom radio & checkbox input with CSS (only)",
+  "main": "src/fancy-input.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://kennyki@github.com/kennyki/fancy-input.git"
+  },
+  "author": "knyki.12@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kennyki/fancy-input/issues"
+  },
+  "homepage": "https://github.com/kennyki/fancy-input#readme",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.6",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1"
+  }
+}
