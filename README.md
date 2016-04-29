@@ -61,3 +61,25 @@ This is an improved version of what has been explained in this [blog post](http:
 1. Change the colors in ./src/_variables.scss
 1. `gulp`
 1. Check ./dist/fancy-input[.min].css
+
+## FAQ
+
+#### Sometimes the radio/checkbox is misaligned with the text
+This is due to the `line-height`. Try modify it to fit:
+
+```
+label.fancy-input {
+  <!-- originally 1.3em -->
+  line-height: 0.6em;
+}
+```
+
+#### Sometimes the radio buttons don't appear in perfect circle
+This might be due to [browsers' rounding calculation](http://stackoverflow.com/questions/24070899/border-radius-50-not-producing-perfect-circles-in-chrome). Try modify the circle's height or width to fit:
+
+```
+label.fancy-input input + span:before {
+  <!-- originally 1em -->
+  height: 1.05em;
+}
+```
