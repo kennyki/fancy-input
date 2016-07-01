@@ -11,9 +11,9 @@ label.fancy-input {
     padding: 0;
     position: absolute;
     width: 1px; }
-    label.fancy-input input + span {
+    label.fancy-input input + * {
       display: block; }
-      label.fancy-input input + span:before {
+      label.fancy-input input + *:before {
         content: '\00A0';
         display: inline-block;
         width: 1em;
@@ -23,63 +23,63 @@ label.fancy-input {
         border: 0.125em solid transparent;
         color: #fff;
         transition: 0.5s ease background; }
-    label.fancy-input input:checked + span:before {
+    label.fancy-input input:checked + *:before {
       border-color: #fff; }
-    label.fancy-input input[type='radio'] + span:before {
+    label.fancy-input input[type='radio'] + *:before {
       border-radius: 1em; }
-    label.fancy-input input[type='checkbox']:checked + span:before {
+    label.fancy-input input[type='checkbox']:checked + *:before {
       content: '\2713'; }
 
-label.fancy-input.positive input + span:before {
+label.fancy-input.positive input + *:before {
   box-shadow: 0 0 0 0.1em #387ef5; }
 
-label.fancy-input.positive input:checked + span:before {
+label.fancy-input.positive input:checked + *:before {
   background: #387ef5; }
 
-label.fancy-input.positive input:focus + span:before {
+label.fancy-input.positive input:focus + *:before {
   box-shadow: 0 0 0.05em 0.2em #b1cdfb; }
 
-label.fancy-input.balanced input + span:before {
+label.fancy-input.balanced input + *:before {
   box-shadow: 0 0 0 0.1em #33cd5f; }
 
-label.fancy-input.balanced input:checked + span:before {
+label.fancy-input.balanced input:checked + *:before {
   background: #33cd5f; }
 
-label.fancy-input.balanced input:focus + span:before {
+label.fancy-input.balanced input:focus + *:before {
   box-shadow: 0 0 0.05em 0.2em #99e6af; }
 
-label.fancy-input.assertive input + span:before {
+label.fancy-input.assertive input + *:before {
   box-shadow: 0 0 0 0.1em #ef473a; }
 
-label.fancy-input.assertive input:checked + span:before {
+label.fancy-input.assertive input:checked + *:before {
   background: #ef473a; }
 
-label.fancy-input.assertive input:focus + span:before {
+label.fancy-input.assertive input:focus + *:before {
   box-shadow: 0 0 0.05em 0.2em #f9b5b0; }
 
-label.fancy-input.dark input + span:before {
+label.fancy-input.dark input + *:before {
   box-shadow: 0 0 0 0.1em #444444; }
 
-label.fancy-input.dark input:checked + span:before {
+label.fancy-input.dark input:checked + *:before {
   background: #444444; }
 
-label.fancy-input.dark input:focus + span:before {
+label.fancy-input.dark input:focus + *:before {
   box-shadow: 0 0 0.05em 0.2em #848484; }
 
-label.fancy-input.royal input + span:before {
+label.fancy-input.royal input + *:before {
   box-shadow: 0 0 0 0.1em #886aea; }
 
-label.fancy-input.royal input:checked + span:before {
+label.fancy-input.royal input:checked + *:before {
   background: #886aea; }
 
-label.fancy-input.royal input:focus + span:before {
+label.fancy-input.royal input:focus + *:before {
   box-shadow: 0 0 0.05em 0.2em #e1dafa; }
 
-label.fancy-input input + span:before {
+label.fancy-input input + *:before {
   box-shadow: 0 0 0 0.1em #387ef5; }
 
-label.fancy-input input:checked + span:before {
+label.fancy-input input:checked + *:before {
   background: #387ef5; }
 
-label.fancy-input input:focus + span:before {
+label.fancy-input input:focus + *:before {
   box-shadow: 0 0 0.05em 0.2em #b1cdfb; }

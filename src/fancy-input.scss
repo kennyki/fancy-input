@@ -19,7 +19,7 @@ label.fancy-input {
     width: 1px;
 
     // use a sibling element for styling
-    & + span {
+    & + * {
       display: block;
 
       // the basic, unchecked style
@@ -39,17 +39,17 @@ label.fancy-input {
       }
     }
 
-    &:checked + span:before {
+    &:checked + *:before {
       border-color: $blank;
     }
 
     // radio (generic)
-    &[type='radio'] + span:before {
+    &[type='radio'] + *:before {
       border-radius: 1em;
     }
 
     // checkbox (checked)
-    &[type='checkbox']:checked + span:before {
+    &[type='checkbox']:checked + *:before {
       content: '\2713';
     }
   }

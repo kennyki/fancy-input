@@ -1,6 +1,6 @@
 {
   "name": "fancy-input",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Custom radio & checkbox input with CSS (only)",
   "main": "src/fancy-input.scss",
   "scripts": {
